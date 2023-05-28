@@ -1,0 +1,215 @@
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 0 20px;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.box-wrapper {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: scroll;
+}
+
+#box1 {
+    padding: 10px;
+    border: solid 1px green
+}
+
+#box2 {
+    padding: 8px;
+    border: solid 1px blue;
+}
+
+#mov {
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: row;
+}
+
+#recomm {
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+#book {
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    width: 67px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgb(248, 68, 100);
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline-offset: 3px;
+}
+
+#box3 {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px green
+}
+
+#box4 {
+    flex-grow: 2;
+    border: solid 1px orange
+}
+
+.middle-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-column div {
+    flex-grow: 1;
+    margin: 0 8px;
+    border: solid 1px red;
+}
+
+.middle-column div+div {
+    margin-top: 8px
+}
+
+#box8 {
+    flex-grow: 1;
+    border: solid 1px black
+}
+
+.logo {
+    float: left;
+    height: 35px;
+    width: 250px;
+    /* font-size: larger; */
+    color: #ffffff;
+    background-color: #87CEEB;
+    font-size: 1.2em;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.search {
+    text-align: center;
+    float: right;
+    cursor: text;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    height: 35px;
+    width: 150px;
+}
+
+.details {
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: row;
+}
+
+.movinticketbook {
+    color: #f4f4f4;
+    background-color: gray;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: -webkit-max-content;
+    width: max-content;
+    max-width: 70%;
+}
+
+
+.theatrlst {
+    display: list-item;
+    float: left;
+    flex-direction: row;
+    text-align: left;
+    font-weight: 700;
+    color: #333;
+}
+
+.show {
+    display: flex;
+    flex: 2;
+    padding: 40px;
+    justify-content: right;
+    column-gap: 30px;
+    color: green;
+    cursor: pointer;
+    /* border: 1px solid #ccc; */
+}
+
+.qr {
+    display: flex;
+    padding: 10px;
+    border: solid 1px green
+}
+
+.container {
+    overflow: scroll;
+    border: solid 1px blue;
+    display: flex;
+}
+
+.left-div {
+    box-sizing: border-box;
+    height: fit-content;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+
+}
+
+.right-div {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 180%;
+
+}
